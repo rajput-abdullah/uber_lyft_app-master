@@ -2,7 +2,7 @@
 
 class   Constants{
 
-  static const kGoogleApiKey = "AIzaSyDLNaKqa00Fx4IsVDaSDm5pJpT7LApNLP4";
+  static const kGoogleApiKey = "AIzaSyBZoCY93kss7zkXAN9LW2N5__AhcI02GNw";
   static const String requestForCab="requestforcab";
   static const String nearByCabs="nearbycabs";
   static const String routesNotAvailable="routesNotAvailable";

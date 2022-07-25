@@ -40,6 +40,7 @@ class PickAndDropLayoutImp extends State<PickAndDropLayout> {
   @override
   void initState() {
     _places = GoogleMapsPlaces(apiKey: Constants.kGoogleApiKey);
+    super.initState();
   }
 
   @override
@@ -83,7 +84,7 @@ class PickAndDropLayoutImp extends State<PickAndDropLayout> {
                           Prediction p = await getPaceOverlay(context);
                           if (p != null) {
                             PlacesDetailsResponse detail =
-                                await _places.getDetailsByPlaceId(p.placeId);
+                                  await _places.getDetailsByPlaceId(p.placeId);
                             final lat = detail.result.geometry.location.lat;
                             final lng = detail.result.geometry.location.lng;
                             widget.pickupLocation = LatLng(lat, lng);
